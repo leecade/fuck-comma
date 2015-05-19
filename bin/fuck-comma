@@ -5,22 +5,26 @@ var fuckComma = require('../')
 var glob = require('glob')
 var path = require('path')
 
-var filepath = process.argv[2]
+detectPath(process.argv[2])
 
-if (filepath){
-  var stat = fs.statSync(filepath)
-  if (stat.isFile()){
-    convertFile(filepath)
-  }else if (stat.isDirectory()){
-    convertDirectory(filepath)
+function detectPath(filepath) {
+  if (filepath){
+    var stat = fs.statSync(filepath)
+    if (stat.isFile()){
+      convertFile(filepath)
+    }else if (stat.isDirectory()){
+      convertDirectory(filepath)
+    }
+  }else{
+    convertDirectory('./')
   }
-}else{
-  convertDirectory('./')
 }
 
 function convertDirectory(dirpath){
   console.info('Converting directory ' + dirpath)
-  var files = glob.sync(path.join(dirpath, '**/*.js'))
+  var files = glob.sync(path.join(dirpath, '**/*.js'), {
+    nodir: true
+  })
   files.forEach(function(file){
     if (file.match(/node_modules\//)) return
     convertFile(path.join(dirpath, file))

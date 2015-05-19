@@ -1,6 +1,6 @@
 {
   "name": "fuck-comma",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A safe way to remove redundant commas for IE6/7.",
   "main": "index.js",
   "scripts": {
