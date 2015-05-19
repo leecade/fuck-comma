@@ -16,7 +16,6 @@ Find out these errors very hard, But now you may just run `fuck-comma` to fixes 
 
 **Based on AST engine**
 
-https://img.shields.io/badge/style-flat--squared-green.svg?style=flat-square
 [![npm version](http://img.shields.io/npm/v/fuck-comma.svg?style=flat-square)](https://npmjs.org/package/fuck-comma "View this project on npm")
 [![npm version](http://img.shields.io/npm/dm/fuck-comma.svg?style=flat-square)](https://npmjs.org/package/fuck-comma "View this project on npm")
 [![Issue Stats](http://issuestats.com/github/leecade/fuck-comma/badge/pr?style=flat-square)](https://github.com/leecade/fuck-comma/pulls?q=is%3Apr+is%3Aclosed)
