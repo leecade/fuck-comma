@@ -2,7 +2,24 @@
 
 A safe way to remove redundant commas for IE6/7.
 
+Keep the last comma within an `Array` or `Object` cause errors on IE6/7, for example:
+
+```js
+var arr = [1,2,]
+```
+
+```js
+var obj = {foo: 'bar',}
+```
+
+Find out these errors very hard, But now you may just run `fuck-comma` to fixes it, have fun!
+
 **Based on AST engine**
+
+[![npm version](http://img.shields.io/npm/v/fuck-comma.svg?style=flat-square)](https://npmjs.org/package/fuck-comma "View this project on npm")
+[![npm version](http://img.shields.io/npm/dm/fuck-comma.svg?style=flat-square)](https://npmjs.org/package/fuck-comma "View this project on npm")
+[![Issue Stats](http://issuestats.com/github/leecade/fuck-comma/badge/pr?style=flat-square)](https://github.com/leecade/fuck-comma/pulls?q=is%3Apr+is%3Aclosed)
+[![Issue Stats](http://issuestats.com/github/leecade/fuck-comma/badge/issue?style=flat-square)](https://github.com/leecade/fuck-comma/issues?q=is%3Aissue+is%3Aclosed)
 
 ## INSTALL
 
