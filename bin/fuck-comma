@@ -23,6 +23,8 @@ function detectPath(filepath) {
 function convertDirectory(dirpath){
   console.info('Converting directory ' + dirpath)
   var files = glob.sync(path.join(dirpath, '**/*.js'), {
+
+    // fixes: the directory name end of *.js cause fs read error
     nodir: true
   })
   files.forEach(function(file){
