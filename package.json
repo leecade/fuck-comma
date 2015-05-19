@@ -1,0 +1,29 @@
+{
+  "name": "fuck-comma",
+  "version": "1.0.0",
+  "description": "A safe way to remove redundant commas for IE6/7.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leecade/fuck-comma.git"
+  },
+  "keywords": [
+    "comma"
+  ],
+  "bin": {
+    "fuck-comma": "./bin/fuck-comma"
+  },
+  "author": "leecade",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leecade/fuck-comma/issues"
+  },
+  "homepage": "https://github.com/leecade/fuck-comma#readme",
+  "dependencies": {
+    "acorn": "^1.1.0",
+    "glob": "^5.0.6"
+  }
+}
