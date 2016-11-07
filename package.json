@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/leecade/fuck-comma#readme",
   "dependencies": {
-    "acorn": "^1.1.0",
-    "glob": "^5.0.6"
+    "acorn": "^4.0.3",
+    "glob": "^7.1.1"
   }
 }
